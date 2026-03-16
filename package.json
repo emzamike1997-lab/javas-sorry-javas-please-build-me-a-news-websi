@@ -1,0 +1,21 @@
+```json
+{
+    "name": "news-website",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3"
+    }
+}
+```
+
+Note: Replace `'YOUR_API_KEY'` with your actual API key from News API.
+
+This code sets up a basic news website with a list of news articles. It uses React as the frontend framework and Axios for making API requests to the News API. The `NewsService` module handles the API request and returns the data to the `App` component, which then renders the news list. The `NewsList` component maps over the news data and renders each article as a list item. The `App` component also handles loading and error states.
