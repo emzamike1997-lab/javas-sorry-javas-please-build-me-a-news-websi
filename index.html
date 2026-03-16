@@ -5,117 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        .nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .nav ul li a:hover {
-            color: #ccc;
-        }
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .article {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px;
-            width: calc(33.33% - 20px);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .article h2 {
-            margin-top: 0;
-        }
-        .article img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>News Website</h1>
-    </div>
-    <div class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Entertainment</a></li>
-        </ul>
-    </div>
-    <div class="main">
-        <div class="article">
-            <h2>Article 1</h2>
-            <img src="https://via.placeholder.com/300" alt="Article 1 Image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </div>
-        <div class="article">
-            <h2>Article 2</h2>
-            <img src="https://via.placeholder.com/300" alt="Article 2 Image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </div>
-        <div class="article">
-            <h2>Article 3</h2>
-            <img src="https://via.placeholder.com/300" alt="Article 3 Image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 News Website</p>
-    </div>
-    <script>
-        // Add event listener to nav links
-        const navLinks = document.querySelectorAll('.nav ul li a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                // Add active class to current link
-                navLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-            });
-        });
-    </script>
+    <div id="root"></div>
+    <script src="index.js"></script>
 </body>
 </html>
 ```
+
+###
